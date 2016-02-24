@@ -1,0 +1,20 @@
+
+## On the raspberry 
+
+### 1 Go to boot partition and back up the cmdline.txt by changing the name to cmdline.original
+
+### 2 Drop the raspberry cmdline.txt file to the boot partition
+
+
+
+## On the computer
+
+## 1 Change fixed ip for the local machine (Every time to open the connection) by opening the terminal.
+
+$ sudo ifconfig eth0 10.0.0.2 netmask 255.255.255.0 up
+
+
+## 2 Test ping (connection) takes about 15 secs after turning raspberry pi.
+
+$ ping 10.0.0.2
+
